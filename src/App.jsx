@@ -14,7 +14,7 @@ function App() {
         <Sidebar />
         </div>
       </div>
-      <div className="flex-10 overflow-y-auto">
+      <div className="flex-10 overflow-y-auto scroll-smooth">
         <div className="max-w-2xl pt-24">
           <About />
           <ExperienceSection />
