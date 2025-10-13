@@ -1,3 +1,4 @@
+import Cursor from "./components/Cursor"
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import ExperienceSection from "./components/ExperienceSection";
@@ -5,24 +6,25 @@ import ProjectsSection from "./components/ProjectsSection";
 
 function App() {
   return (
-    // Main container that fills the viewport height
-    <div className="flex h-screen">
-      {/* Left Sidebar - Static */}
-      <div className="flex flex-1 justify-center items-start p-8">
+    <div className="texture-overlay">
+    <Cursor />
+    <div className="flex flex-col md:flex-row justify-evenly md:h-screen relative z-10">
+      <div className="flex-9">
+        <div className="w-fit md:pl-20 justify-self-center">
         <Sidebar />
+        </div>
       </div>
-
-      {/* Right Content - Scrollable */}
-      <div className="flex-1 overflow-y-auto p-8">
-        <div className="max-w-3xl"> {/* Constrain content width for readability */}
+      <div className="flex-10 overflow-y-auto">
+        <div className="max-w-2xl pt-24">
           <About />
           <ExperienceSection />
           <ProjectsSection />
-          {/* Add more content here if you want to test the scrolling */}
         </div>
       </div>
     </div>
+    </div>
   );
 }
+
 
 export default App;

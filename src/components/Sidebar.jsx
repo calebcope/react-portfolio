@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiInstagram,  } from "react-icons/si";
+import { BiSolidCoffeeBean } from "react-icons/bi";
 
 export default function Sidebar() {
-  const titles = ["Web", "Game", "App", "Software"];
+  const titles = ["Web", "Game", "Mobile", "Software"];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
@@ -34,34 +35,33 @@ export default function Sidebar() {
   }, [subIndex, deleting, index]);
 
     return (
-    <div className="flex flex-col justify-center">
-      {/* Name */}
-      <h1 className="text-3xl font-bold">Caleb Cope</h1>
+    <div className="flex flex-col justify-between h-dvh py-24">
 
-      {/* Typewriter effect */}
-      <h2 className="text-lg text-gray-700 mt-2">
-        Your new{" "}
-        <span className="text-blue-600 font-semibold border-r-2 border-blue-600 pr-1 animate-pulse">
-          {titles[index].substring(0, subIndex)}
-        </span>{" "}
-        Developer
-      </h2>
+      <div className="w-fit">
+        <h1 className="text-5xl font-heading text-near-black">Caleb Cope</h1>
 
-      {/* Short tagline */}
-      <p className="mt-4 text-sm text-gray-500">
-        Building games, apps, and web experiences.
-      </p>
+        <h2 className="text-xl font-bodybold text-stone-700 mt-5 flex">
+          <span
+            className="text-brown-dark px-1 animate-pulse inline-block"
+          >
+            {titles[index].substring(0, subIndex)}
+          </span>
+          &nbsp;Developer
+        </h2>
+      </div>
 
-      {/* Social links */}
-      <div className="flex space-x-4 mt-6">
+      <div className="w-fit flex space-x-8 mt-8">
         <a href="https://github.com/calebcope" target="_blank" rel="noreferrer">
-          <SiGithub size={24} className="hover:text-blue-600 transition-colors" />
+          <SiGithub size={28} className="transition-colors hover:text-[#E2BA86]" />
         </a>
         <a href="https://linkedin.com/in/calebcope" target="_blank" rel="noreferrer">
-          <SiLinkedin size={24} className="hover:text-blue-600 transition-colors" />
+          <SiLinkedin size={28} className="transition-colors hover:text-[#E2BA86]" />
         </a>
         <a href="https://instagram.com/calebtcope" target="_blank" rel="noreferrer">
-          <SiInstagram size={24} className="hover:text-blue-600 transition-colors" />
+          <SiInstagram size={28} className="transition-colors hover:text-[#E2BA86]" />
+        </a>
+        <a href="https://nutritionsource.hsph.harvard.edu/food-features/coffee/" target="_blank" rel="noreferrer">
+          <BiSolidCoffeeBean size={28} className="transition-colors hover:text-[#E2BA86]" />
         </a>
       </div>
     </div>

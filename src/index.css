@@ -1,1 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: "Noto Sans", sans-serif;
+    --font-body: "Noto Sans", sans-serif;
+
+    --color-warm-cream: #f1e8d3;
+    --color-peach: #E2BA86;
+    --color-brown-dark: #563517;
+    --color-near-black: #1F170E;
+  }
+}
+
+@layer utilities {
+   .texture-overlay {
+    background-image: url("./assets/warm-paper.png");
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+    font-weight: 900;
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+    font-weight: 400;
+  }
+
+  .font-bodybold {
+    font-family: var(--font-body);
+    font-weight: 500;
+  }
+
+  .bg-warm-cream { background-color: var(--color-warm-cream); }
+  .bg-peach { background-color: var(--color-peach); }
+  .bg-brown-dark { background-color: var(--color-brown-dark); }
+  .bg-near-black { background-color: var(--color-near-black); }
+
+  .text-warm-cream { color: var(--color-warm-cream); }
+  .text-peach { color: var(--color-peach); }
+  .text-brown-dark { color: var(--color-brown-dark); }
+  .text-near-black { color: var(--color-near-black); }
+
+  .border-warm-cream { border-color: var(--color-warm-cream); }
+  .border-peach { border-color: var(--color-peach); }
+  .border-brown-dark { border-color: var(--color-brown-dark); }
+  .border-near-black { border-color: var(--color-near-black); }
+}

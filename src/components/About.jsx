@@ -1,12 +1,8 @@
 export default function About() {
   return (
     <section>
-      <h2 className="text-2xl font-bold mb-4">About</h2>
-      <p className="mb-4 text-gray-700 leading-relaxed">
-        I’m a software developer passionate about building engaging experiences
-        through games, web apps, and mobile applications. Currently studying
-        Computer Engineering at The Ohio State University, I enjoy combining
-        technical problem-solving with creative design.
+      <p className="mx-4 font-body text-stone-600">
+       I'm a software developer passionate about creating engaging experiences. I explore various aspects of software, whether it's mobile apps, websites, or immersive games, all with the goal of bringing ideas to life in fun and meaningful ways. Each project I work on pushes me to think critically, pick up new tools, and become comfortable with diverse technology. Whether it’s user-friendly designs, efficient backend architecture, or interactive features, my focus is on creating solutions that are not only functional but a pleasure to use.
       </p>
     </section>
   );
