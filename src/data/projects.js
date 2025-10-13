@@ -32,6 +32,6 @@ export const projects = [
     description:
       "Built with React.js and Tailwind CSS. Fueled by my love of coffee.",
     image: "/src/assets/react-tailwind.png",
-    link: "https://react.dev/"
+    link: "https://github.com/calebcope/react-portfolio"
   }
 ];
