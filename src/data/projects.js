@@ -10,7 +10,7 @@ export const projects = [
     description:
       "React Native mobile app integrating Firebase and plant APIs for planning, tracking, and managing farm workflows with real-time collaboration.",
     image: bloombase,
-    link: "https://github.com/calebcope/bloom-base"
+    link: "https://bloomsky.farm"
   },
   {
     name: "Vingt-Un",
