@@ -7,7 +7,6 @@ import ProjectsSection from "./components/ProjectsSection";
 function App() {
   return (
     <div className="texture-overlay">
-    <Cursor />
     <div className="flex flex-col md:flex-row justify-evenly md:h-screen relative z-10">
       <div className="flex-9">
         <div className="w-fit pl-5 md:pl-20 justify-self-center">
